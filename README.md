@@ -15,11 +15,16 @@ import matplotlib.pyplot as plt
 import plotline
 
 def main():
+    # プロットするデータ
     data1 = [ [56, 58, 66], [4, 4.3, 4.5] ]
     data2 = [ [53, 58, 66], [5, 6.3, 8.4] ]
+    
     fig = plt.figure()
     ax = fig.add_subplot(111)
+    
+    # ここでTAS図の境界線・名称がプロットされます．
     plotline.tas_diagram(ax)
+    
     ax.plot(*data1, "o", mec="r", c="pink", label="data1")
     ax.plot(*data2, "s", mec="b", c="skyblue", label="data2")
     ax.set_xlim(35, 78)
@@ -33,7 +38,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Total alkali-silica (TAS) diagramのプロットができます．
+`main.py`を実行すると，Total alkali-silica (TAS) diagramのプロットができます．気が向いたらTH-CA図やK-series図も作成する予定．
 
 <img src="sampleimage.jpg" width="400">
 
