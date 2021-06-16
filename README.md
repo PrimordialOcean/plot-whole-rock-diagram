@@ -38,9 +38,11 @@ if __name__ == "__main__":
     main()
 ```
 
-`main.py`を実行すると，Total alkali-silica (TAS) diagramのプロットができます．気が向いたらTH-CA図やK-series図も作成する予定．
+`main.py`を実行すると，Total alkali-silica (TAS) diagramのプロットができます．
 
 <img src="sampleimage.jpg" width="400">
+
+現在，Na2O+K2O vs. SiO2 (Le Bas et al., 1986), K2O vs. SiO2 (Peccerillo&Taylor, 1976; Gill, 1981)，およびFeO*/MgO vs. SiO2 (Miyashiro, 1974) のプロットに対応しています．
 
 ## Reference
 - Total alkali-silica (TAS) diagram: Le Bas et al. (1986) J. Petrol., 27: 745-750.
